@@ -14,14 +14,14 @@ class NewEvent implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $message;
+    public $chat;
 
     /**
      * Create a new event instance.
      */
-    public function __construct($message)
+    public function __construct($chat)
     {
-        $this->message = $message;
+        $this->chat = $chat;
     }
 
     /**
